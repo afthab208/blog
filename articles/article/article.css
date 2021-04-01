@@ -1,0 +1,23 @@
+* {
+    
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 22px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50em
+
+}
+img {
+    border-radius: 25px;
+    width:100%;
+    height:auto;
+    
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+  }
+  
+ 
