@@ -5,3 +5,11 @@ const progressBar = document.querySelector("#progressBar");
     progressBar.style.height = `${newProgressHeight}%`;
     progressBar.style.opacity = `${newProgressHeight}%`;
     }
+
+    async function visit() {
+        const data = await fetch('https://api.countapi.xyz/update/afthab/cool/?amount=1')
+        const res = await data.json()
+        console.log(res)
+    
+    }
+    visit()
