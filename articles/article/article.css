@@ -6,9 +6,22 @@
 
 }
 
+img {
+    border-radius: 25px;
+}
+
+p {
+    
+  margin: auto;
+  width: auto;
+  
+}
 
 ::-webkit-scrollbar {
     width: 0;
     background: transparent;
   }
   
+a {
+  color: aliceblue;
+}

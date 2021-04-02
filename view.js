@@ -4,4 +4,5 @@ async function lmao() {
     document.getElementById("views").innerHTML = data.value
 
 }
+
 lmao()
