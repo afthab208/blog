@@ -40,18 +40,28 @@
 
     <script>
     async function like() {
-   
-    document.getElementById('like').onclick = async function() {
-        const lol = await fetch('https://api.countapi.xyz/update/afthab/like/?amount=1')
-    const lmao = await lol.json()
-    const cool = `LIKE 💘 ${lmao.value}`
-    
-    document.getElementById("like").innerHTML = cool
-    }   
-        }
-       like()
+  document.getElementById("like").onclick = async function () {
+    start = clicks = frequency = 0;
+    btn.onclick = function () {
+      if (!start) start = new Date();
+      frequency = (++clicks / (new Date() - start)) * 1000;
+    };
+    if (frequency > 2) {
+      //redirect or something
+      alert("no spam lol");
+    } else {
+      const lol = await fetch(
+        "https://api.countapi.xyz/update/afthab/like/?amount=1"
+      );
+      const lmao = await lol.json();
+      const cool = LIKE :cupid: ${lmao.value};
 
-       //lol
+      document.getElementById("like").innerHTML = cool;
+    }
+  };
+  like();
+}
+//lol
         </script>
    
    
